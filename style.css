@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 185%; /* Set the font size to 175% */
+    background-image: url('background.jpg'); /* Replace 'your-background-image.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 80px;
+    white-space: nowrap; /* Prevent title from wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    animation: bounceTitle 20s linear infinite; /* Adjust duration as needed */
+    padding: 10px; /* Add padding to give some space around the title */
+}
+
+@keyframes bounceTitle {
+    0%, 100% {
+        transform: translateX(0); /* Start and end position (center) */
+    }
+    25% {
+        transform: translateX(-50%); /* Move to the left */
+    }
+    75% {
+        transform: translateX(50%); /* Move to the right */
+    }
+}
+#briefcase-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.briefcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+    width: 130px; 
+    height: 130px;
+    background-image: url('unopened-briefcase.png'); /* Set the unopened briefcase image */
+    background-size: cover;
+    cursor: pointer;
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #000000; /* Text color */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #745812; /* Background color */
+    color: #fff; /* Text color */
+    font-size: 28px;
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+}
+
+
+#question-display {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: #745812; /* Choose your desired background color */
+
+    border-radius: 10px; /* Add rounded corners */
+}
